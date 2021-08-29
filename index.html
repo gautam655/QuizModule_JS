@@ -1,0 +1,98 @@
+<html>
+<head>
+  
+  <style>
+    #quiz{
+        width:100%;
+        height:20%;
+        background-Color:#333333;
+        text-align:center;
+        font-size:60;
+      }
+      .p1{
+        color:white;
+      }
+      #que1{
+        border:2px grey;
+        width:60%;
+        height:60%;
+        margin:left;
+        font-size:20;
+      }
+      #submit{
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+         padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+       
+        font-size: 16px;
+      }
+      li{
+        display:block;
+      }
+    .incorrect
+  {
+    background:red;
+    color: white;
+    outline-style: outline;
+  }
+
+  .correct
+  {
+    background:green;
+    color: white;
+  }
+  .error
+  {
+    background:red;
+    color:white;
+  }
+  #next{
+    background-color: #4CAF50;
+        border: none;
+        color: white;
+         padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+  }
+  #restart{
+    background-color: #4CAF50;
+        border: none;
+        color: white;
+         padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+  }
+  </style>
+</head>
+<body>
+    <div id="quiz">
+        <p class="p1">Quiz</p>
+    </div>
+      
+    <div id="que1">
+        <h2 id="title"></h2>
+        <ul id="options">
+          </ul>
+          <p id="result"></p>
+         <p id="error"></p>
+    </div>
+    
+    <button id="submit">Submit</button>
+   <button id="next">Next</button>
+   
+   <div style="display:none;" id="answersheet"> </div>
+   <div>
+     <button style="display:none" id="restart" type="reset">Restart</button>
+     </div>
+  
+   </body>
+<script src="script.js"></script>
+
+</html>
